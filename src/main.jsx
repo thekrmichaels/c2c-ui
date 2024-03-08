@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Auth0Provider } from "@auth0/auth0-react";
-import App from "./App.jsx";
+import CommitFinder from "./components/CommitFinder";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
@@ -9,7 +9,7 @@ const base = "c2c-ui";
 const router = createBrowserRouter([
   {
     path: base,
-    element: <App />,
+    element: <CommitFinder />,
   },
 ]);
 
